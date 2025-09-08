@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Contact information table">
+        <lightning-button label="Show Accounts" variant="Success" onclick={clickhanlder}></lightning-button>
+        <template lwc:if={isvisible}>
+        <lightning-datatable
+                key-field="id"
+                data={myarray}
+                columns={mycolom}>
+        </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>

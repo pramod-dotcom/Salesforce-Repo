@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Parent Compo">
+        <lightning-input label="Enter first name" onchange={firstnamehandler}></lightning-input>
+        <lightning-input label="Enter Last name" onchange={lastnamehandler}></lightning-input>
+        <lightning-button label="Generate full name" onclick={clickhandler}></lightning-button>
+        <c-child-component fromparent={fullname}></c-child-component>  
+      </lightning-card>
+</template>

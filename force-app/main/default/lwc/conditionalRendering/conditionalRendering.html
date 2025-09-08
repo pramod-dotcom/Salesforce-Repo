@@ -1,0 +1,8 @@
+<template>
+   <lightning-card title="This is for conditional rendering">
+    <lightning-button label="Show" onclick={clickhandler}></lightning-button>
+    <template lwc:if={isvisible}>
+        <h1>This is the data which will be visible whe n userclicks on the show button</h1>
+    </template>
+   </lightning-card> 
+</template>

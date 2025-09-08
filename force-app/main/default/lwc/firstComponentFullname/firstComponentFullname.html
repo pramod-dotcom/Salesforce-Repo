@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="My full name generator compoent">
+        <lightning-input label="Enter first name" onchange={handleFirstName}></lightning-input>
+        <lightning-input label="Enter last name" onchange={handleLastName}></lightning-input>
+         <lightning-button variant="brand" label="Generate" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+         <p>{fullname}</p>
+    </lightning-card>
+</template>

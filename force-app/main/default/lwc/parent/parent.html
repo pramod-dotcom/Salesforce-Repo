@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Calculate">
+        <lightning-input 
+          label="Enter First Number"
+          onchange={changehandlre}
+        ></lightning-input>
+        <lightning-input 
+          label="Enter second Number"
+          onchange={changehandlre2}
+        ></lightning-input>
+        <lightning-button label="Calculate" 
+        onclick={clickhandler}>
+        </lightning-button>
+        <c-child onresult={handlerevent}  lwc:ref="calucation"></c-child>
+        <p>{showresult}</p>
+    </lightning-card>
+</template>

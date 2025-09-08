@@ -1,0 +1,14 @@
+<template>
+   <lightning-card title="Account records">
+     <lightning-datatable
+                key-field="id"
+                data={mydata}
+                columns={colom}
+                max-row-selection="1"
+                onrowselection={handleRowselection}>
+        </lightning-datatable>
+        <template if:true={selectedrowid}>
+        <c-showselectedrercordschild record-id={selectedrowid}></c-showselectedrercordschild>
+        </template>
+   </lightning-card> 
+</template>
